@@ -1,0 +1,114 @@
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+
+.formulario {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/background-degrade.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+.formulario .conteudo {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding-right: 6rem;
+}
+
+.formulario .conteudo .titulo {
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.formulario .conteudo .texto {
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+.formulario .dados {
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.formulario .dados .items .item {
+    margin-bottom: 25px;   
+}
+
+.formulario .dados .items .item .input {
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 16px ;
+    font-size: 2rem;
+}
+
+.formulario .dados .items .item .input#mensagem {
+    padding: 16px 16px 75px 16px;
+}
+
+
+.formulario .dados .items .item .input::placeholder {
+    color: rgba(168, 168, 168, 1);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.formulario .dados .items .item p {
+    font-size: 16px;
+    position: absolute;
+    /* colosr: red; */
+    visibility: hidden;
+}
+
+.formulario .dados .btn {
+    height: 60px;
+    width: 300px;
+    background-color: rgba(60, 204, 135, 1);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 2.5rem;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.formulario .dados .btn:hover{
+    transition: ease 0.3s;
+    background-color:rgb(60, 132, 204);
+}
+
+.formulario .dados .items.error .input {
+    border-color: rgba(245, 46, 46, 1);
+}
+
+.formulario .dados .items.error p {
+    color: rgba(245, 46, 46, 1);
+    visibility: visible;
+}
+
+.formulario .dados .items.valid .input {
+    border-color: rgba(0, 194, 43, 1);
+}
+
+.formulario .dados .items.valid p {
+    color: rgba(0, 194, 43, 1);
+    visibility: hidden;
+}
